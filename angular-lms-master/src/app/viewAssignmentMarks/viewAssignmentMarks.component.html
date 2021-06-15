@@ -1,0 +1,32 @@
+<div class="row row-content">
+    <div class="col-12 col-sm-9">
+        <h2>List of Assignment Marks</h2>
+    </div>
+     <div class="col-12 col-sm-3">
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Name</th>
+                    <th>Course Name</th>
+                    <th>Assignment No</th>
+                    <th>Obtained Marks</th>
+                    <th>Total Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let assignment of assignmentMarks let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{assignment.name}}</td>
+                    <td>{{assignment.courseName}}</td>
+                    <td>{{assignment.assignmentNo}}</td>
+                    <td>{{assignment.obtainedMarks}}</td>
+                    <td>{{assignment.totalMarks}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

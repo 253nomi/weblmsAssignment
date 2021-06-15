@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row row-content">
+        <div class="col-12">
+           <h3>Please Add a feedback</h3>
+        </div>
+         <div class="col-12 col-md-9">
+             <form>
+                 <div class="form-group row">
+                     <label for="sname" class="col-md-2 col-form-label">Student's Name:</label>
+                     <div class="col-md-10">
+                         <input type="text" class="form-control" id="sname" name="sname" placeholder="Student's Name" [(ngModel)]="sname">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                    <label for="sname" class="col-md-2 col-form-label">Student's Email:</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="semail" name="semail" placeholder="Student's Email" [(ngModel)]="semail">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="sname" class="col-md-2 col-form-label">Student's Phone:</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="sphone" name="sphone" placeholder="Student's Phone" [(ngModel)]="sphone">
+                    </div>
+                </div>
+                 <div class="form-group row">
+                     <label for="rollno" class="col-md-2 col-form-label">Student Feedback:</label>
+                     <div class="col-md-10">
+                         <input type="text" class="form-control" id="feedback" name="feedback" placeholder="Student Feedback" [(ngModel)]="sfeedback">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <div class="offset-md-2 col-md-10">
+                         <button type="submit" class="btn btn-primary" (click)="providefeedback()">Add Feedback</button>
+                     </div>
+                 </div>
+             </form>
+    
+         </div>
+          <div class="col-12 col-md">
+         </div>
+    </div>
+    </div>
+    
+    
